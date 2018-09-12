@@ -2,17 +2,35 @@
 Moment 2 - NodeJs & Gulp
 Mattias Bygdeson */
 
+nav {
+    
+}
+
 #mainMenu ul {
-    padding: 0;
+    padding-left: 10%;
     margin: 0;
-    background: blue;
+    background: #5fb3b3;
 }
 
 #mainMenu li {
     display: inline-block;
-    background: red;
     width: 100px;
     text-align: center;
-    padding: 1%;
+    padding: 10px;
+    margin: 0;
     text-transform: uppercase;
+}
+
+#mainMenu li:hover {
+    background: #fac863;
+    cursor: pointer;
+}
+
+#mainMenu li.current {
+    font-weight: bold;
+}
+
+#mainMenu a {
+    color: #1b2b34;
+    text-decoration: none;
 }

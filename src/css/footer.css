@@ -1,0 +1,13 @@
+/* DT173G Webbutveckling III
+Moment 2 - NodeJs & Gulp
+Mattias Bygdeson */
+
+footer {
+    background: #1b2b34;
+    min-height: 50px;
+    padding-top: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

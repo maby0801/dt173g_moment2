@@ -6,22 +6,33 @@ Mattias Bygdeson */
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #d8dee9;
 }
 
 #wrapper {
-    
-    max-width: 50%;
-    margin: auto;
-    margin-top: 100px;
-    padding: 20px;
+    /* max-width: 50%; */
+    /* margin: auto; */
+    /* margin-top: 100px; */
+    /* padding: 20px; */
+}
+
+/* TEXT */
+p {
+    color: #1b2b34;
+    font-size: 110%;
+    /* max-width: 50%; */
+}
+
+.tagline {
+    color: #65737e;
+    font-size: 90%;
+    text-transform: uppercase;
+    margin: 0;
 }
 
 /* MAIN AREA */
 main {
-    border-style: dotted;
-    border-color: black;
-    border-width: 2px;
-
-    background: #dedfe0;
-    padding: 1% 2% 4% 2%;
+    padding: 1% 2% 4% 10%;
+    max-width: 50%;
 }
