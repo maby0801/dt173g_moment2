@@ -1,0 +1,27 @@
+/* DT173G Webbutveckling III
+Moment 2 - NodeJs & Gulp
+Mattias Bygdeson */
+
+/* LAYOUT */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    
+    max-width: 50%;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+/* MAIN AREA */
+main {
+    border-style: dotted;
+    border-color: black;
+    border-width: 2px;
+
+    background: #dedfe0;
+    padding: 1% 2% 4% 2%;
+}

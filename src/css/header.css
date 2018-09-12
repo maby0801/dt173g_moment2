@@ -1,0 +1,16 @@
+/* DT173G Webbutveckling III
+Moment 2 - NodeJs & Gulp
+Mattias Bygdeson */
+
+/* HEADER AND MAIN MENU */
+header {
+    border-style: dotted;
+    border-color: black;
+    border-width: 2px;
+}
+
+header h1 {
+    color: red;
+    
+}
+
