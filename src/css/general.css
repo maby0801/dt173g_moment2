@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background: #d8dee9;
+    background: #1b2b34;
 }
 
 /* TEXT */
@@ -23,10 +23,25 @@ p {
     margin: 0;
 }
 
+a {
+    color: #fac863;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#closeImage {
+    display: inline;
+}
+
 /* MAIN AREA */
 main {
-    padding: 1% 2% 4% 10%;
-    max-width: 50%;
+    padding: 1% 40% 4% 10%;
+    background: #d8dee9;
+    min-height: 600px;
 }
 
 #about img {

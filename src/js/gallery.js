@@ -6,16 +6,27 @@
 
 // VARIABLES
 var thumbnailEl = document.getElementById("gallery");
-var imageDisplay = document.getElementById("imageDisplay");
+var imageDisplayWrapperEl = document.getElementById("imageDisplayWrapper");
 
 // EVENT LISTENERS
 thumbnailEl.addEventListener("click", enlargeImage, false);
 
 // FUNCTIONS
 function enlargeImage(e) {
+    // Create HTML markup to display enlarged image
+    // Add eventlistener for closing image
     if(e.target.nodeName === "IMG") {
-        console.log(e.target.id);
-        console.log("Du klickade just på en bild");
-        // Visa en bild
+        imageDisplayWrapperEl.innerHTML =   "<div id='imageDisplay'>" +
+                                            "<img src='img/" + e.target.id + ".jpg' alt='" + e.target.alt + "' />" +
+                                            "<p>" + e.target.alt + " <span><a id='closeImage'>Stäng</a></span></p>" +
+                                            "</div>";
+
+        var closeImageEL = document.getElementById("closeImage");
+        closeImageEL.addEventListener("click", closeImage, false);
     } 
+}
+
+function closeImage() {
+    // Close enlarged image
+    imageDisplayWrapperEl.innerHTML = "";
 }
