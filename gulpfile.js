@@ -34,7 +34,7 @@ gulp.task('convert_css', function(){
         .pipe(gulp.dest('pub/css'))
 });
 
-// Move all image files to pub
+// Move all jpg and png image files to pub
 gulp.task('move_img', function(){
     return gulp.src('src/img/*.{jpg,png}')
         .pipe(imagemin())
