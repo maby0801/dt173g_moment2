@@ -10,6 +10,19 @@ body {
     background: #1b2b34;
 }
 
+/* TABLE */
+table {
+    background: #c1c5ce;
+    padding: 1%;
+}
+
+tr, td {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #4f5b67;
+    padding: 5px 10px 5px 10px;
+}
+
 /* TEXT */
 p {
     color: #1b2b34;

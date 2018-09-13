@@ -9,7 +9,9 @@ var thumbnailEl = document.getElementById("gallery");
 var imageDisplayWrapperEl = document.getElementById("imageDisplayWrapper");
 
 // EVENT LISTENERS
-thumbnailEl.addEventListener("click", enlargeImage, false);
+if(thumbnailEl) {
+    thumbnailEl.addEventListener("click", enlargeImage, false);
+}
 
 // FUNCTIONS
 function enlargeImage(e) {
