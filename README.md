@@ -24,7 +24,7 @@ Webbplatsen jag har gjort i den här uppgiften innehåller ett mindre galleri. D
 
 ---
 ## Manual
-Det här systemet bygger på två uppsättningar av kataloger - en döpt till *src* (den som laddas ner från detta repository) och en döpt till *pub* (den som publiceras mot webbserver). Det är enbart i katalogen *src* vi arbetar med. Katalogen *pub* är en katalog som styrs helt av automatiseringsprocessen. De *tasks* som finns på plats komprimerar och konkatenerar JavaScript-filer och CSS-filer, komprimerar filstorlek på bilder, samt kopierar alla HTML-dokument och lägger samtliga filer i *pub*. Dessa uppgifter genomförs så fort systemet upptäcker att en förändring har skett, så det är inget vi måste aktivera manuellt.
+Det här systemet bygger på två uppsättningar av kataloger - en döpt till *src* (den som laddas ner från detta repository) och en döpt till *pub* (den som publiceras mot webbserver). Det är enbart i katalogen *src* vi arbetar med. Katalogen *pub* är en katalog som styrs helt av automatiseringsprocessen. De *tasks* som finns på plats komprimerar och konkatenerar JavaScript-filer och CSS-filer, komprimerar filstorlek på bilder, samt kopierar alla HTML-dokument och lägger samtliga filer i *pub*. Dessa uppgifter genomförs så fort systemet upptäcker att en förändring har skett, så det är inget vi måste aktivera manuellt. Med *Live Server* installerat i Visual Studio Code kommer alla ändringar du sparar att direkt uppdateras i din webbläsare.
 
 ### Installation
 För att komma igång och arbeta med denna webbplats behöver man först klona det. Det gör man genom att i kommandoprompten skriva följande:
