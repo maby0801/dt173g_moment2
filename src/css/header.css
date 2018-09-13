@@ -8,7 +8,11 @@ header {
     padding: 2% 2% 2% 10%;
 }
 
-header h1 {
+header h1 a {
     color: #fac863;
+    text-decoration: none;
+}
+
+header h1 {
     margin-bottom: 0;
 }

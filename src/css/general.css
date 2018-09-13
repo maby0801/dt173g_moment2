@@ -28,3 +28,10 @@ main {
     padding: 1% 2% 4% 10%;
     max-width: 50%;
 }
+
+#about img {
+    float: right;
+    width: 30%;
+    height: auto;
+    margin-left: 2%;
+}

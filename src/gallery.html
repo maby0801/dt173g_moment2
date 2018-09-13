@@ -12,7 +12,7 @@
 <body>
     <div id="wrapper">
         <header>
-            <h1>Moment 2 - NodeJs & Gulp</h1>
+            <h1><a href="index.html">Moment 2 - NodeJs & Gulp</a></h1>
             <p class="tagline">DT173G Webbutveckling III</p>
         </header>
         <nav id="mainMenu">
@@ -31,10 +31,23 @@
         <main>
             <p>
                 Under sista veckan av augusti och in på första veckan av september så var jag i Tokyo! Det var första
-                gången jag var i Japan och det var en helt fantastisk resa. Jag tog massor med bilder, så här har jag gjort
-                ett galleri med hjälp av JavaScript för att visa ett litet urval av bilderna. Vid klick på miniatyrerna
-                förstoras dem och visar en kort bildtext.
+                gången jag var i Japan och det var en helt fantastisk resa. Jag tog massor med bilder, så här har jag
+                gjort ett galleri med hjälp av JavaScript för att visa ett litet urval av bilderna. Vid klick på
+                miniatyrerna förstoras dem och visar en kort bildtext.
             </p>
+            <p>
+                När jag byggde upp den här sidan har jag använt ett NPM plugin som heter <i>Gulp Imagemin</i> som automatiskt
+                komprimerar filstorleken på bilder.
+            </p>
+
+            <div id="gallery">
+                <img id="photo001" src="img/photo_001.jpg" alt="Strax utanför Chiyodaparken, påväg tillbaka mot staden.">
+                <img id="photo002" src="img/photo_002.jpg" alt="Akihabara - shopping distriktet för alla elektroniknördar!">
+            </div>
+
+            <div id="imageDisplay">
+                <!-- When an image is clicked it will be displayed here -->
+            </div>
         </main>
     </div>
     <footer>
@@ -43,6 +56,7 @@
             Mittuniversitetet
         </p>
     </footer>
+<script src="js/main.min.js"></script>
 </body>
 
 </html>

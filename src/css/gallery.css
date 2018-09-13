@@ -1,0 +1,14 @@
+/* DT173G Webbutveckling III
+Moment 2 - NodeJs & Gulp
+Mattias Bygdeson */
+
+#gallery img {
+    object-fit: cover;
+    width:200px;
+    height:200px;
+    margin-right: 10px;
+}
+
+#gallery img:hover {
+    cursor: pointer;
+}
