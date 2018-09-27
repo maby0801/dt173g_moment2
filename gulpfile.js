@@ -1,5 +1,5 @@
 // DT173G Webbutveckling III
-// Moment 2 - NodeJs & Gulp
+// Moment 3 - CSS-preprocessorer och SASS
 // Mattias Bygdeson
 
 const gulp = require('gulp');
@@ -8,6 +8,7 @@ const uglify = require('gulp-uglify');
 const uglifycss = require('gulp-uglifycss');
 const imagemin = require('gulp-imagemin');
 const sass = require('gulp-sass');
+const sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('default', ['copy_html', 'convert_js', 'convert_css', 'move_img', 'update'], function(){
     // Activate all automation
@@ -30,7 +31,9 @@ gulp.task('convert_js', function(){
 // Convert all sass files to css. Concatenate and compress all css files and move to pub
 gulp.task('convert_css', function(){
     return gulp.src('src/scss/*.scss')
+        .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
+        .pipe(sourcemaps.write())
         .pipe(concat('style.min.css'))
         .pipe(uglifycss())
         .pipe(gulp.dest('pub/css'))
@@ -46,7 +49,7 @@ gulp.task('move_img', function(){
 // Look for changes in the file system
 gulp.task('update', function(){
     gulp.watch('src/js/*.js', ['convert_js']);
-    gulp.watch('src/css/*.css', ['convert_css']);
+    gulp.watch('src/scss/*.scss', ['convert_css']);
     gulp.watch('src/*.html', ['copy_html']);
     gulp.watch('src/img/*.jpg', ['move_img']);
 })
