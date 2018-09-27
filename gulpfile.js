@@ -7,8 +7,9 @@ const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 const uglifycss = require('gulp-uglifycss');
 const imagemin = require('gulp-imagemin');
+const sass = require('gulp-sass');
 
-gulp.task('default', ['update'], function(){
+gulp.task('default', ['copy_html', 'convert_js', 'convert_css', 'move_img', 'update'], function(){
     // Activate all automation
 });
 
@@ -26,10 +27,11 @@ gulp.task('convert_js', function(){
         .pipe(gulp.dest('pub/js'))
 });
 
-// Concatenate and compress all css files and move to pub
+// Convert all sass files to css. Concatenate and compress all css files and move to pub
 gulp.task('convert_css', function(){
-    return gulp.src('src/css/*.css')
-        .pipe(concat('main.min.css'))
+    return gulp.src('src/scss/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(concat('style.min.css'))
         .pipe(uglifycss())
         .pipe(gulp.dest('pub/css'))
 });
