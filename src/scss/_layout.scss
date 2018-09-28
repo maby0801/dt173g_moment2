@@ -2,10 +2,10 @@ $grid-margin: 10px;
 
 body {
     margin: 0;
-    margin-top: 20px;
+    margin-top: 0;
 }
 
-header {
+.website-header {
     grid-area: header;
     background-color: #bb4242;
     padding: $grid-margin;
@@ -29,19 +29,11 @@ footer {
     padding: $grid-margin;
 }
 
-article {
-    margin-right: 4%;
-    padding: $grid-margin;
-    background: red;
-}
 
-article:last-of-type {
-    margin-right: 0;
-}
 
 .wrapper {
     margin: auto;
-    max-width: 80%;
+    max-width: 70%;
     display: grid;
     grid-template-columns: fit-content(40%);
     grid-template-areas:
@@ -49,7 +41,7 @@ article:last-of-type {
         'footer footer footer footer footer';
 }
 
-.articlesWrapper {
+.articles-wrapper {
     display: grid;
     grid-template-columns: auto auto auto auto;
 }
@@ -80,7 +72,7 @@ article:last-of-type {
         margin-bottom: 2%;
     }
 
-    .articlesWrapper {
+    .articles-wrapper {
         display: grid;
         grid-template-columns: auto;
     }
