@@ -1,33 +1,68 @@
-// Main settings
-
-// Variables
+// VARIABLES
 $font-stack: Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif;
-$color-off-white: #cdd3df;
+
+$color-off-white: #e9e5df;
+$color-off-black: #1a2b33;
+$color-primary: #5fb3b3;
+$color-secondary: #ec5f67;
+
 $medium_screen_size: 1100px;
 $small_screen_size: 600px;
 
-// Import
-@import 'header';
-@import 'layout';
+
 
 body {
     font-family: $font-stack;
+    color: $color-off-black;
 }
 
+// TEXT
+// Headlines
+h1 {
+    color: $color-primary;
+    font-size: 220%;
+    margin-bottom: 0;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 110%;
+}
+
+.ingress {
+    font-weight: bold;
+    padding-left: 1%;
+
+    box-sizing: border-box;
+    border: solid $color-primary;
+    border-width: 0 0 0 10px;
+}
+
+// Links
+a {
+    color: $color-secondary;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: darken( $color-secondary, 25%);
+}
+
+// ARTICLES
 .main-article {
     img {
         width: 100%;
     }
 }
 
-// ARTICLES
-article {
-    margin: 0 4% 2% 0;
-    padding: $grid-margin;
-    
-    border-style: solid;
-}
-
-article:last-of-type {
-    margin-right: 0;
-}
+// IMPORT
+@import 'header';
+@import 'layout';

@@ -3,33 +3,36 @@ $grid-margin: 10px;
 body {
     margin: 0;
     margin-top: 0;
+    background-color: desaturate($color-secondary, 30%);
 }
 
 .website-header {
     grid-area: header;
-    background-color: #bb4242;
+    background-color: $color-secondary;
     padding: $grid-margin;
 }
 
 main {
     grid-area: main;
-    background-color: #42bbb1;
+    background-color: $color-off-white;
     padding: $grid-margin;
 }
 
-aside {
-    grid-area: aside;
-    background-color: #bb42a7;
+article {
+    margin: 0 4% 2% 0;
     padding: $grid-margin;
+}
+
+article:last-of-type {
+    margin-right: 0;
 }
 
 footer {
     grid-area: footer;
-    background-color: #4254bb;
+    background-color: $color-off-black;
+    color: $color-off-white;
     padding: $grid-margin;
 }
-
-
 
 .wrapper {
     margin: auto;
@@ -39,6 +42,8 @@ footer {
     grid-template-areas:
         'header main main main main'
         'footer footer footer footer footer';
+
+    box-shadow: 0px 0px 30px rgba( $color-off-black, .6 );
 }
 
 .articles-wrapper {
