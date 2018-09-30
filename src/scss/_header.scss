@@ -1,3 +1,7 @@
+.mobile-menu {
+    display: none;
+}
+
 .website-header {
     background-color: $color-secondary;
 
@@ -9,18 +13,18 @@
     ul {
         list-style: none;
         margin: 0;
-        margin-top: 5%;
         padding: 0;
+        margin-top: 5%;
+
+        @include transform(skewY(-5deg));
     }
 
     li {
         height: 30px;
-        margin: 2;
+        margin: 2%;
         padding-right: 20px;
         padding-top: 10px;
-        
         text-align: right;
-
         border-style: solid;
         border-width: 0 0 1px 0;
         border-color: rgba( $color-off-white, .4);
@@ -39,6 +43,7 @@
 
     a:hover {
         color: darken( $color-secondary, 40%);
+        text-decoration: none;
     }
 }
 
@@ -50,24 +55,53 @@
             position: relative;
             top: 45px;
         }
+    }
 
-        nav {
-            text-align: right;
-        }
+    .desktop-menu {
+        text-align: right;
 
-        nav ul {
+        ul {
             display: inline;
         }
 
-        nav li {
+        li {
             text-align: left;
-            width: 10%;
+            width: auto;
             display: inline-block;
-            margin: 0%;
+            margin: 0;
+            padding-left: 1%;
+            text-align: right;
+            border-width: 0;
         }
     }
 }
 
 @media screen and (max-width: $small_screen_size) {
-    
+    .website-header {
+        padding: 0;
+        margin: 0;
+
+        img {
+            top: 80px;
+            margin: auto;
+            width: 145px;
+            margin-left: 10px;
+        }
+    }
+
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: initial;
+
+        .menu-button {
+            position: absolute;
+            margin-top: 13px;
+            right: 2px;
+            width: 50px;
+            height: auto;
+        }
+    }
 }

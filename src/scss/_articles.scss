@@ -8,15 +8,19 @@ article {
 
 .lesser-article {
     h1 {
-        font-size: 175%;
+        font-size: 245%;
     }
 }
 
 // Headlines
 h1 {
+    font-family: $font-hamster;
     color: $color-primary;
-    font-size: 220%;
+    font-weight: 100;
+
+    font-size: 400%;
     margin-bottom: 0;
+    margin-top: 10px;
 
     a {
         color: $color-primary;
@@ -28,17 +32,29 @@ h1 {
 }
 
 h2 {
-    color: $color-primary;
+    @extend h1;
+    
+    font-family: $font-stack;
+    color: $color-off-black;
+    font-weight: 400;
+    font-size: 190%;
     margin-top: 30px;
-    margin-bottom: 0;
+}
+
+h3 {
+    @extend h2;
+
+    font-size: 140%;
 }
 
 // Text
 p {
     font-size: 110%;
+    margin-top: 10px;
 }
 
 .ingress {
+    font-size: 120%;
     font-weight: bold;
     padding-left: 1%;
 
@@ -51,6 +67,7 @@ p {
 a {
     color: $color-secondary;
     text-decoration: none;
+    font-weight: 600;
 }
 
 a:hover {
@@ -58,5 +75,5 @@ a:hover {
 }
 
 a:visited {
-    color: darken( $color-secondary, 25%);
+    color: darken( $color-secondary, 25% );
 }

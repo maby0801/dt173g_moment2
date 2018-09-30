@@ -16,7 +16,7 @@
                 <a href="">
                     <img src="img/logotype.png" alt="Website logotype" width="227" height="227" />
                 </a>
-                <nav>
+                <nav class="desktop-menu">
                     <ul>
                         <li><a href="#">Startsida</a></li>
                         <li><a href="#">Om oss</a></li>
@@ -24,6 +24,12 @@
                         <li><a href="#">Nya recept</a></li>
                         <li><a href="#">Kontakt</a></li>
                     </ul>
+                </nav>
+
+                <nav class="mobile-menu">
+                    <a href="#" onclick=myFunction()>
+                        <img src="img/menu-button.png" alt="Menu button" class="menu-button">
+                    </a>
                 </nav>
             </div>
         </header>
@@ -58,10 +64,19 @@
                     fermentum enim sed dolor tincidunt dignissim. Donec et nibh feugiat mauris vulputate tincidunt.
                     Vestibulum tincidunt, neque at iaculis hendrerit, massa dui placerat ex, ac malesuada nunc nibh ac
                     velit. Praesent sed felis iaculis, vehicula urna vitae, dignissim lacus. Pellentesque eu varius
-                    risus. Donec et tristique leo, eu bibendum quam. Vivamus vel dignissim lacus. Etiam eget lacus
+                    risus. Donec et tristique leo, eu <a href="#">bibendum</a> quam. Vivamus vel dignissim lacus. Etiam
+                    eget lacus
                     risus. Curabitur at urna turpis. Proin sed lorem metus. Sed congue, leo quis interdum aliquet,
                     lectus nisi interdum dolor, commodo bibendum orci massa eget neque. Sed sagittis risus et placerat
-                    sollicitudin. <a href="#">Läs mer...</a>
+                    sollicitudin.
+                </p>
+                <h3>Heading 3</h3>
+                <p>
+                    Proin commodo elit non nisi sollicitudin ultricies. Ut euismod sed odio id dignissim. Quisque vitae
+                    malesuada dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                    mus. Aliquam ornare quam in nunc pharetra, sed finibus felis convallis. Phasellus facilisis tellus
+                    sed libero volutpat, eget faucibus ligula mollis. Nam facilisis sollicitudin erat vel rhoncus. Ut
+                    in dui sit amet enim tempus porta.
                 </p>
             </article>
             <div class="articles-wrapper">
@@ -72,7 +87,7 @@
                     <h1><a href="#">Heading</a></h1>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus ut diam ac pretium. Sed
-                        interdum cursus dolor, in interdum ligula. Pellentesque id arcu eget mollis. 
+                        interdum cursus dolor, in interdum ligula. Pellentesque id arcu eget mollis.
                         <a href="#">Läs mer...</a>
                     </p>
                 </article>
@@ -83,14 +98,14 @@
                     <h1><a href="#">Heading</a></h1>
                     <p>
                         Vestibulum a nunc imperdiet, finibus est porta, finibus sem. Donec facilisis venenatis magna, a
-                        ullamcorper turpis. Donec sem libero, cursus porttitor aliquet at, pharetra a augue. 
+                        ullamcorper turpis. Donec sem libero, cursus porttitor aliquet at, pharetra a augue.
                         <a href="#">Läs mer...</a>
                     </p>
                 </article>
                 <article class="lesser-article">
                     <a href="#">
                         <img src="img/blur-breakfast-close-up-dairy-product-376464.jpg" alt="Pancakes" width="1000"
-                            height="667">
+                            height="667" />
                     </a>
                     <h1><a href="#">Heading</a></h1>
                     <p>
@@ -102,7 +117,7 @@
                 <article class="lesser-article">
                     <a href="#">
                         <img src="img/blur-breakfast-caffeine-close-up-631160.jpg" alt="Coffee drink" width="1000"
-                            height="667">
+                            height="667" />
                     </a>
                     <h1><a href="#">Heading</a></h1>
                     <p>
@@ -117,6 +132,12 @@
             Footer
         </footer>
     </div>
+
+    <script>
+        function myFunction() {
+            console.log("Hej");
+        }
+    </script>
 </body>
 
 </html>

@@ -65,7 +65,9 @@ footer {
 }
 
 @media screen and (max-width: $small_screen_size) {
-    $grid-margin: 5px;
+    body {
+        top: -90px;
+    }
 
     article {
         margin-right: 0;

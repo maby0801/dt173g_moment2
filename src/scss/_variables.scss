@@ -1,12 +1,27 @@
-// Variables
+// Fonts
 $font-stack: Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif;
+$font-hamster: MyHappyEnding;
 
+// Color scheme
 $color-off-white: #e9e5df;
 $color-off-black: #1a2b33;
 $color-primary: #5fb3b3;
 $color-secondary: #ec5f67;
 
+// Second scheme
+$test-color-switch: 0;
+
+@if $test-color-switch == 1 {
+    $color-primary: #80b97a;
+    $color-secondary: #fa9158;
+}
+
+@if $test-color-switch == 2 {
+    $color-primary: #c593c4;
+    $color-secondary: #ac7968;
+}
+
+// Sizes & measurment
 $medium_screen_size: 1100px;
 $small_screen_size: 600px;
-
 $grid-margin: 10px;

@@ -10,7 +10,7 @@ const imagemin = require('gulp-imagemin');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 
-gulp.task('default', ['copy_html', 'convert_js', 'convert_css', 'move_img', 'update'], function(){
+gulp.task('default', ['copy_html', 'convert_js', 'convert_css', 'move_img', 'move_fonts', 'update'], function(){
     // Activate all automation
 });
 
@@ -46,10 +46,17 @@ gulp.task('move_img', function(){
         .pipe(gulp.dest('pub/img'));
 });
 
+// Move all fonts to pub
+gulp.task('move_fonts', function(){
+    return gulp.src('src/fonts/*.{ttf,otf}')
+        .pipe(gulp.dest('pub/fonts/'));
+});
+
 // Look for changes in the file system
 gulp.task('update', function(){
     gulp.watch('src/js/*.js', ['convert_js']);
     gulp.watch('src/scss/*.scss', ['convert_css']);
     gulp.watch('src/*.html', ['copy_html']);
-    gulp.watch('src/img/*.jpg', ['move_img']);
+    gulp.watch('src/img/*.{jpg,png}', ['move_img']);
+    gulp.watch('src/fonts/*.{ttf,otf}', ['move_fonts']);
 })
