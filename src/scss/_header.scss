@@ -1,4 +1,6 @@
 .website-header {
+    background-color: $color-secondary;
+
     img {
         max-width: 200px;
         height: auto;
@@ -28,6 +30,10 @@
         color: $color-off-white;
         font-size: 110%;
         text-decoration: none;
+        color: $color-off-white;
+    }
+
+    a:visited {
         color: $color-off-white;
     }
 
