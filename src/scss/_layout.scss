@@ -26,8 +26,6 @@ article:last-of-type {
 
 footer {
     grid-area: footer;
-    background-color: $color-off-black;
-    color: $color-off-white;
     padding: $grid-margin;
 }
 
@@ -66,7 +64,8 @@ footer {
 
 @media screen and (max-width: $small_screen_size) {
     body {
-        top: -90px;
+        top: -0px;
+        // position: initial;
     }
 
     article {

@@ -13,3 +13,9 @@ body {
 @mixin transform($property) {
     transform: $property;
 }
+
+@media screen and (max-width: $medium-screen-size) {
+    body {
+        background-color: $color-off-black;
+    }
+}

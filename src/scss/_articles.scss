@@ -77,3 +77,9 @@ a:hover {
 a:visited {
     color: darken( $color-secondary, 25% );
 }
+
+@media screen and (max-width: $small_screen_size) {
+    .ingress {
+        padding-left: 4%;
+    }
+}
