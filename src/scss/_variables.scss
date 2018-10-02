@@ -9,7 +9,7 @@ $color-gray: #798894;
 $color-primary: #5fb3b3;
 $color-secondary: #ec5f67;
 
-// Second scheme
+// Second color scheme
 $test-color-switch: 0;
 
 @if $test-color-switch == 1 {
@@ -17,6 +17,7 @@ $test-color-switch: 0;
     $color-secondary: #fa9158;
 }
 
+// Third color scheme
 @if $test-color-switch == 2 {
     $color-primary: #c593c4;
     $color-secondary: #ac7968;

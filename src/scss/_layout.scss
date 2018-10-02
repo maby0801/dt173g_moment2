@@ -44,6 +44,7 @@ footer {
     grid-template-columns: auto auto auto auto;
 }
 
+// Break point
 @media screen and (max-width: $medium_screen_size) {
     body {
         margin-top: 0px;
@@ -62,6 +63,7 @@ footer {
     }
 }
 
+// Break point
 @media screen and (max-width: $small_screen_size) {
     body {
         top: -0px;
